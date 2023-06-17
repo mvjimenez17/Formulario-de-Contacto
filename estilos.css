@@ -131,9 +131,40 @@ body{
         padding: 20px;
     }
 
-    .cntact__img{
+    .contact__img{
         max-width: 400px;
     }
 
     
 }
+
+@media screen  and (max-width: 425px) {
+    :root{
+        
+        --contact__columns: 1fr;
+        --contact__rows: max-content 1fr;
+        --clip: polygon(0 0, 100% 100%, 100% 0);
+    }
+
+    .contact__form{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        padding: 50px 0 20px;
+        width: 90%;
+        min-width: 250px;
+    }
+
+    .contact__picture{
+        grid-column: 1/-2;
+        grid-row: 1/2;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .contact__img{
+        max-width: 500px;
+    }
+
+    
+}
+
